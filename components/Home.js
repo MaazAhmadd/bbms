@@ -1,6 +1,9 @@
 import Link from "next/link";
 import React from "react";
 import Countdown from "react-countdown";
+import Opensea from "./icons/Opensea";
+import Rare from "./icons/Rare";
+import Twitter from "./icons/twitter";
 // import { Link } from "react-router-dom";
 
 const endCount = `2022-03-05T00:00:00`;
@@ -101,34 +104,19 @@ export default function Home() {
                 href="https://opensea.io/collection/wondermfer"
                 className="social-link w-inline-block"
               >
-                <img
-                  width="39"
-                  loading="lazy"
-                  alt="Open Sea"
-                  src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c7fb7d3d18a3fe21d704_Group%20269%20(1).svg"
-                />
+                <Opensea color={"#ede6db"} />
               </a>
               <a
                 href="https://looksrare.org/collections/0x25937e8177c6A8C08266a4E17b2Ad09eD2DEb635"
                 className="social-link w-inline-block"
               >
-                <img
-                  width="44"
-                  loading="lazy"
-                  alt="Open Sea"
-                  src="https://assets-global.website-files.com/61e9ad107f42425177667f64/621a74a9d8a81dc23e29a220_looksrare-logo.svg"
-                />
+                <Rare color={"#ede6db"} />
               </a>
               <a
                 href="https://twitter.com/MferWonder"
                 className="social-link w-inline-block"
               >
-                <img
-                  width="39"
-                  loading="lazy"
-                  alt="Twitter"
-                  src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c0124635380edddd0545_Vector%20(12).svg"
-                />
+                <Twitter color={"#ede6db"} />
               </a>
               <a href="#" className="connect-button w-button">
                 Connect
