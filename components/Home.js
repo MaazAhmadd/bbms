@@ -3,7 +3,7 @@ import React from "react";
 import Countdown from "react-countdown";
 import Opensea from "./icons/Opensea";
 import Rare from "./icons/Rare";
-import Twitter from "./icons/twitter";
+import Twitter from "./icons/Twitter";
 // import { Link } from "react-router-dom";
 
 const endCount = `2022-03-05T00:00:00`;
