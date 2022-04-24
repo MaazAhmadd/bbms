@@ -7,34 +7,89 @@ export default function FAQ() {
       <div
         id="faq"
         className="mint-green-section wf-section"
-        style={{ backgroundColor: "var(--palette-dark-2)" }}
+        style={{ backgroundColor: "var(--palette-dark-3)" }}
       >
         <div className="container _750 w-container">
-          <img
+          {/* <img
             src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c0108012782683157ddc_flower.svg"
             loading="lazy"
             alt=""
             className="emoji-on-top flower"
-          />
-          <h2 className="centered-heading">FAQ</h2>
+          /> */}
+          <h2 className="centered-heading nav_lk_cl">FAQ</h2>
           <div className="w-dyn-list">
             <div role="list" className="w-dyn-items">
               <Question
-                title={<div className="faq-question">What is NFT?</div>}
+                title={<div className="faq-question">What is SpaVerse?</div>}
                 info={
                   <div className="faq-content w-richtext">
                     <p>
-                      The acronym NFT stands for &quot;non-fungible token.&quot;
-                      An interchangeable item, such as a $1 bill, is
-                      transferable with any other dollar bill. The only digital
-                      asset that cannot be exchanged for another NFT is a
-                      non-fungible token. Therefore, every NFT is distinctive.
+                      Join us on this luxurious journey in May 2022 to witness a
+                      new NFT collection that is as lavish as your dreams. Our
+                      initial launch is Beauty Brain NFT collection of 2500
+                      living on the Ethereum blockchain in the form of an
+                      ERC-721 token. Brain Beauty card holders will have early
+                      access to an upcoming SpaVerse projects that are related
+                      to health, wellness, and beauty.
                     </p>
+                  </div>
+                }
+              />
+              <Question
+                title={
+                  <div className="faq-question">What distinguishes us?</div>
+                }
+                info={
+                  <div
+                    className="faq-content w-richtext"
+                    style={{ fontSize: "18px" }}
+                  >
+                    <h3>Two Key Points:</h3>
                     <p>
-                      NFTs are moved from one user to another using blockchain
-                      solutions, which create data traces from the producer to
-                      the consumer that confirms the purchase. This specifies
-                      the buyer&apos;s one-of-a-kind ownership rights (new owner).
+                      Our team's experience, straightaway thinking, the
+                      background of long-term success, and affirmation of
+                      short-term executions.
+                      <br />
+                      And,
+                      <br />
+                      Our willingness to put in the long, arduous hours day
+                      after day until we achieve our objectives
+                    </p>
+                  </div>
+                }
+              />
+              <Question
+                title={<div className="faq-question">What is our process?</div>}
+                info={
+                  <div className="faq-content w-richtext">
+                    Every single one of us is an innovator.
+                    <br />
+                    <br />
+                    We are all motivators and change agents. It's a new way of
+                    doing things.
+                    <br />
+                    <br />
+                    We believe by putting ideas into blockchain technology, a
+                    new wave of NFT initiatives and collections will emerge.
+                    <br />
+                    <br />
+                    To be clear, this is not a duplicate project; we've looked
+                    at dozens of roadmaps and watched projects develop,
+                    flourish, and collapse.
+                  </div>
+                }
+              />
+              <Question
+                title={
+                  <div className="faq-question">
+                    What are the perks of holding SpaVerse NFT?
+                  </div>
+                }
+                info={
+                  <div className="faq-content w-richtext">
+                    <p>
+                      There will be several surprises for those who will
+                      successfully mint.
                     </p>
                   </div>
                 }
@@ -42,73 +97,25 @@ export default function FAQ() {
               <Question
                 title={<div className="faq-question">How to Mint NFT?</div>}
                 info={
-                  <div
-                    className="faq-content w-richtext"
-                    style={{ fontSize: "18px" }}
-                  >
-                    <p>
-                      You&apos;ll need three things before you can start minting your
-                      own NFTs:
-                    </p>
-                    <ul>
-                      <li>Music, a piece of artwork, or a collectible</li>
-                      <li>
-                        A cryptocurrency wallet to store your cryptocurrency
-                      </li>
-                      <li>Some ethereum to pay the minting fee</li>
-                    </ul>
-                    <p>
-                      You&apos;ll also have to decide which blockchain your
-                      non-fungible token will be built on. The technique for
-                      minting NFTs varies in each marketplace. Most of the
-                      techniques mentioned here, however, will apply to all
-                      platforms in some way.
-                    </p>
-                    <ul>
-                      <li>Open an account with a crypto exchange</li>
-                      <li>Set up an account with a crypto wallet</li>
-                      <li>Transfer Ether from your exchange to your wallet</li>
-                      <li>Join up for the network using your wallet</li>
-                      <li>Mint an NFT</li>
-                      <li>Trade your NFT</li>
-                    </ul>
-                    <p>
-                      Your first NFT would have been coined by now if you had
-                      followed these instructions.
-                    </p>
-                  </div>
-                }
-              />
-              {/* <Question
-                title={<div className="faq-question">What is the utility?</div>}
-                info={
                   <div className="faq-content w-richtext">
                     <p>
-                      Holders have exclusive access to our best Alpha Group of
-                      the NFT World, connections with most renowned underground
-                      artists around the globe, big project WL giveaways and
-                      receive IRL Collectibles
+                      Open an account with a crypto exchange
+                      <br />
+                      Set up an account
+                      <br />
+                      with a crypto wallet Transfer Ether from your exchange to
+                      your wallet
+                      <br />
+                      Visit www.spaverse.com
+                      <br />
+                      Click on the Mint Connect it with your wallet
+                      <br />
+                      Welcome to SpaVerse!
                     </p>
                   </div>
                 }
               />
-              <Question
-                title={<div className="faq-question">What are NFTs?</div>}
-                info={
-                  <div className="faq-content w-richtext">
-                    <p>
-                      NFT stands for “non-fungible token” which are unique
-                      digital items that are stored and encrypted on the
-                      blockchain that people can buy, own, and trade. NFTs can
-                      simply be digital art but can have various benefits. They
-                      can be treated like membership cards where holders get
-                      exclusive access to things like websites, events,
-                      merchandise, and more.
-                    </p>
-                  </div>
-                }
-              />
-              <Question
+              {/*<Question
                 title={
                   <div className="faq-question">
                     How do I buy a WonderMfers NFT?
@@ -306,7 +313,7 @@ export default function FAQ() {
             </div>
           </div>
         </div>
-        <img
+        {/* <img
           src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c011b0fe0ff651fc9082_egg.png"
           loading="lazy"
           width="152"
@@ -370,7 +377,7 @@ export default function FAQ() {
               "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
             transformStyle: "preserve-3d",
           }}
-        />
+        /> */}
       </div>
     </>
   );

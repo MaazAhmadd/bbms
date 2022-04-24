@@ -1,10 +1,28 @@
 :root {
+  /* --palette-light-1: #b1d0e0;
+  --palette-light-2: #95bdd1;
+  --palette-dark-3: #1a374d;
+  --palette-dark-2: #406882;
+  --palette-dark-1: #6998ab; */
+  /* --palette-light-1: #cc9544;
+  --palette-light-2: #a8711f;
+  --palette-dark-3: #1c0a00;
+  --palette-dark-2: #361500;
+  --palette-dark-1: #603601; */
+
+  /* --palette-light-1: #1f1f1f; */
   --palette-light-1: #ede6db;
   --palette-light-2: #83bbb8;
   --palette-dark-1: #417d7a;
   --palette-dark-2: #1d5c63;
   --palette-dark-3: #1a3c40;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* font-family: 'Nanum Myeongjo', serif;
+font-family: 'Playfair Display SC', serif; */
+/* font-family: Bouquet, sans-serif; */
 
 html,
 body {
@@ -1968,6 +1986,7 @@ h1 {
   margin-top: 80px;
   margin-bottom: 32px;
   font-family: Bouquet, sans-serif;
+  /* font-family: "Nanum Myeongjo", sans-serif; */
   font-size: 7.85vw;
   line-height: 1em;
   font-weight: 400;
@@ -1977,6 +1996,7 @@ h1 {
 h2 {
   margin-top: 0px;
   margin-bottom: 40px;
+  /* font-family: "Nanum Myeongjo", sans-serif; */
   font-family: Bouquet, sans-serif;
   font-size: 50px;
   line-height: 1em;
@@ -2474,7 +2494,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   width: 33.333333333333336%;
-  padding: 30px;
+  padding: 0 60px 0 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -2581,7 +2601,7 @@ a {
 }
 
 .wp-logo-bottom {
-  margin-top: 70px;
+  /* margin-top: 30px; */
 }
 
 .white-inline-link {
@@ -4267,7 +4287,8 @@ a {
 }
 .timer {
   margin-top: 20px;
-  font-family: "Bouquet";
+  /* font-family: "Nanum Myeongjo"; */
+  font-family: Bouquet, sans-serif;
   font-size: 2.5em;
   font-weight: 400;
   font-style: normal;

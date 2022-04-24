@@ -141,8 +141,13 @@ export default function Home() {
             id="w-nav-overlay-0"
           ></div>
         </div>
-        <div className="container centered-text w-container">
-          <img
+        <div
+          className="container centered-text w-container"
+          style={{
+            paddingTop: "0",
+          }}
+        >
+          {/* <img
             className="zoomInPop animation_delay_0"
             src="/4.png"
             // src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c01209f79682eed6141b_wonderpal%20head.svg"
@@ -155,9 +160,10 @@ export default function Home() {
             }}
             data-w-id="fc1a33ef-b652-8213-b8f3-30bd1307a44c"
             alt="WonderPal logo"
-          />
+          /> */}
           {/* <h1 className="heading nav_lk_cl">Beauty Brain MetaSpa</h1> */}
           <img src="/banner2.png" alt="" style={{ width: "80%" }} />
+          <img src="/1.png" alt="" style={{ maxWidth: "25%" }} />
           <Link
             // disabled={mintStatus}
             data-w-id="57408da1-b59b-fad3-0308-861394b4b6b8"

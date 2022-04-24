@@ -10,8 +10,8 @@ export default function Main() {
   return (
     <>
       <Home />
-      <FAQ />
       <Roadmap />
+      <FAQ />
       <Team />
       <Footer />
     </>
