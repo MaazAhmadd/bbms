@@ -29,9 +29,9 @@ export default function Footer() {
             }}
           >
             <label
-              for="email-2"
+              htmlFor="email-2"
               id="contact-email"
-              class="field-label-2"
+              className="field-label-2"
               style={{ marginBottom: "0" }}
             >
               Email *
@@ -39,8 +39,8 @@ export default function Footer() {
             <input
               style={{ marginBottom: "0", width: "auto" }}
               type="email"
-              class="w-input"
-              maxlength="256"
+              className="w-input"
+              maxLength="256"
               name="email"
               data-name="email"
               placeholder=""
@@ -65,7 +65,7 @@ export default function Footer() {
               type="submit"
               value="Submit"
               data-wait="Please wait..."
-              // class="button w-button"
+              // className="button w-button"
             />
           </div>
           <br />

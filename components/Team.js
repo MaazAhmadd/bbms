@@ -56,9 +56,9 @@ export default function Team() {
             <p>
               Mr. Brain is an early investor in crypto and award-winning
               physician with over 10 years of hospital experience across United
-              States. He has collaborated on campaigns for some of the world's
-              most recognized hospitals, delivering a multidisciplinary blend of
-              consistently successful cases.
+              States. He has collaborated on campaigns for some of the
+              world&apos;s most recognized hospitals, delivering a
+              multidisciplinary blend of consistently successful cases.
             </p>
           </div>
           <div

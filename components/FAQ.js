@@ -46,7 +46,7 @@ export default function FAQ() {
                   >
                     <h3>Two Key Points:</h3>
                     <p>
-                      Our team's experience, straightaway thinking, the
+                      Our team&apos;s experience, straightaway thinking, the
                       background of long-term success, and affirmation of
                       short-term executions.
                       <br />
@@ -65,16 +65,16 @@ export default function FAQ() {
                     Every single one of us is an innovator.
                     <br />
                     <br />
-                    We are all motivators and change agents. It's a new way of
-                    doing things.
+                    We are all motivators and change agents. It&apos;s a new way
+                    of doing things.
                     <br />
                     <br />
                     We believe by putting ideas into blockchain technology, a
                     new wave of NFT initiatives and collections will emerge.
                     <br />
                     <br />
-                    To be clear, this is not a duplicate project; we've looked
-                    at dozens of roadmaps and watched projects develop,
+                    To be clear, this is not a duplicate project; we&apos;ve
+                    looked at dozens of roadmaps and watched projects develop,
                     flourish, and collapse.
                   </div>
                 }
