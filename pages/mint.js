@@ -275,7 +275,7 @@ export default function Mint() {
         className="hero-section"
         // style={{ height: "100vh" }}
       >
-        <div className="absolute-clouds">
+        {/* <div className="absolute-clouds">
           <img
             src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c011ce5e644d48e10e61_Vector%2096.svg"
             loading="lazy"
@@ -302,7 +302,7 @@ export default function Mint() {
             alt=""
             className="left-cloud"
           />
-        </div>
+        </div> */}
         <div
           data-animation="default"
           data-collapse="medium"
@@ -327,7 +327,7 @@ export default function Mint() {
               About
             </a> */}
             <Link href="/">
-              <a className="nav-link w-nav-link">Back To Home</a>
+              <a className="nav-link w-nav-link nav_lk_cl">Back To Home</a>
             </Link>
             {/* <a href="#wondermap" className="nav-link w-nav-link">
               Wondermap
@@ -404,7 +404,7 @@ export default function Mint() {
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundColor: "#ba878e",
+              backgroundColor: "var(--palette-dark-1)",
               padding: 24,
               color: "white",
               borderRadius: 24,

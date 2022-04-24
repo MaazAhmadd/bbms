@@ -32,9 +32,9 @@ export default function Roadmap() {
           The ideas are limitless, driven by passion and unity of this
           wonderfulcommunity.
         </p> */}
-        <p>
+        {/* <p>
           <b>JOIN US on our launch of the Beauty Brain MetaSpa.</b>
-        </p>
+        </p> */}
       </div>
       {/* <img
         src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c0124635386e3ddd0544_HI.png"
