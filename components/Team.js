@@ -77,10 +77,10 @@ export default function Team() {
               }}
             >
               <p className="text_grad">
-                Brain is an early investor in crypto and award-winning physician
-                with over 22 years of experience across the United States. He
-                has collaborated on campaigns for some of the world&apos;s most
-                recognized healthcare facilities.
+                Brain is an early investor in crypto and an award-winning
+                physician with over 22 years of experience across the United
+                States. He has collaborated on campaigns for some of the
+                world&apos;s most recognized healthcare facilities.
               </p>
               {/* <h3 className="name">Name</h3> */}
               {/* <p className="team-description">Healthcare Professional</p>
@@ -96,7 +96,7 @@ export default function Team() {
               </a> */}
             </div>
             <p className="text_grad">
-              Beauty is a medical spa entrepreneur, blockchain fanatic and
+              Beauty is a medical spa entrepreneur, blockchain fanatic, and
               Wharton fintech grad. A 6-month immersion into research within the
               NFT space revealed the time is right for SpaVerse to be
               established.

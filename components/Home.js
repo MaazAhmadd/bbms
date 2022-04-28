@@ -35,7 +35,7 @@ export default function Home() {
         <video
           autoPlay
           muted
-          loop
+          // loop
           id="myVideo"
           style={{ width: "101%", top: "-10%" }}
         >

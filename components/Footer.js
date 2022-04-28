@@ -15,7 +15,9 @@ export default function Footer() {
         }}
       >
         <div className="footer-container w-container">
-          <h3>Stay Connected</h3>
+          <h3 style={{ marginBottom: "3%" }} className="text_grad">
+            Stay Connected
+          </h3>
           {/* <br /> */}
           <div
             id="subscribe"
@@ -31,13 +33,13 @@ export default function Footer() {
             <label
               htmlFor="email-2"
               id="contact-email"
-              className="field-label-2"
+              className="field-label-2 text_grad"
               style={{ marginBottom: "0" }}
             >
               Email *
             </label>
             <input
-              style={{ marginBottom: "0", width: "auto" }}
+              style={{ margin: "1% 13% 1% 12%", width: "auto" }}
               type="email"
               className="w-input"
               maxLength="256"
