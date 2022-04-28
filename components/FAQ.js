@@ -16,70 +16,60 @@ export default function FAQ() {
             alt=""
             className="emoji-on-top flower"
           /> */}
-          <h2 className="centered-heading nav_lk_cl">FAQ</h2>
+          <h2
+            className="centered-heading nav_lk_cl text_grad"
+            style={{ width: "15%", marginBottom: "5%" }}
+          >
+            FAQ
+          </h2>
           <div className="w-dyn-list">
             <div role="list" className="w-dyn-items">
               <Question
-                title={<div className="faq-question">What is SpaVerse?</div>}
+                title={
+                  <div className="faq-question text_grad m0">
+                    What distinguishes us?
+                  </div>
+                }
                 info={
                   <div className="faq-content w-richtext">
-                    <p>
-                      Join us on this luxurious journey in May 2022 to witness a
-                      new NFT collection that is as lavish as your dreams. Our
-                      initial launch is Beauty Brain NFT collection of 2500
-                      living on the Ethereum blockchain in the form of an
-                      ERC-721 token. Brain Beauty card holders will have early
-                      access to an upcoming SpaVerse projects that are related
-                      to health, wellness, and beauty.
+                    <p className="text_grad ">
+                      We believe in putting ideas into blockchain technology, a
+                      new wave of NFT initiatives and collections will emerge.
+                      We have analyzed multiple projects and roadmaps; our
+                      strong foundation and long-term vision sets us apart from
+                      other projects.
                     </p>
                   </div>
                 }
               />
               <Question
                 title={
-                  <div className="faq-question">What distinguishes us?</div>
+                  <div className="faq-question text_grad m0">
+                    How many can we mint per wallet?
+                  </div>
                 }
                 info={
                   <div
-                    className="faq-content w-richtext"
+                    className="faq-content w-richtext text_grad"
                     style={{ fontSize: "18px" }}
                   >
-                    <h3>Two Key Points:</h3>
-                    <p>
-                      Our team&apos;s experience, straightaway thinking, the
-                      background of long-term success, and affirmation of
-                      short-term executions.
-                      <br />
-                      And,
-                      <br />
-                      Our willingness to put in the long, arduous hours day
-                      after day until we achieve our objectives
-                    </p>
+                    <h3>4</h3>
                   </div>
                 }
               />
               <Question
-                title={<div className="faq-question">What is our process?</div>}
+                title={
+                  <div className="faq-question text_grad m0">
+                    How much does it cost to mint?
+                  </div>
+                }
                 info={
-                  <div className="faq-content w-richtext">
-                    Every single one of us is an innovator.
-                    <br />
-                    <br />
-                    We are all motivators and change agents. It&apos;s a new way
-                    of doing things.
-                    <br />
-                    <br />
-                    We believe by putting ideas into blockchain technology, a
-                    new wave of NFT initiatives and collections will emerge.
-                    <br />
-                    <br />
-                    To be clear, this is not a duplicate project; we&apos;ve
-                    looked at dozens of roadmaps and watched projects develop,
-                    flourish, and collapse.
+                  <div className="faq-content w-richtext text_grad">
+                    0.05 ETH
                   </div>
                 }
               />
-              <Question
+              {/* <Question
                 title={
                   <div className="faq-question">
                     What are the perks of holding SpaVerse NFT?
@@ -114,7 +104,7 @@ export default function FAQ() {
                     </p>
                   </div>
                 }
-              />
+              /> */}
               {/*<Question
                 title={
                   <div className="faq-question">

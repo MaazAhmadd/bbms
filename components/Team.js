@@ -15,8 +15,10 @@ export default function Team() {
           alt=""
           className="emoji-on-top flower"
         /> */}
-        <h2 className="centered-heading">Our Team</h2>
-        <p>
+        <h2 className="centered-heading text_grad" style={{ width: "35%" }}>
+          Our Team
+        </h2>
+        <p className="text_grad">
           SpaVerse is supported by professionals to build and educate the
           community on health and beauty treatment.
         </p>
@@ -41,7 +43,7 @@ export default function Team() {
                 <img src="/2.png" alt="" style={{ maxWidth: "200px" }} />
               </a>
               {/* <h3 className="name">Name</h3> */}
-              <p className="team-description">Physician</p>
+              {/* <p className="team-description">Physician</p>
               <a
                 href="https://twitter.com/minasnft"
                 className="twitter-link w-inline-block"
@@ -51,9 +53,9 @@ export default function Team() {
                   loading="lazy"
                   alt="Twitter"
                 />
-              </a>
+              </a> */}
             </div>
-            <p>
+            <p className="text_grad">
               Mr. Brain is an early investor in crypto and award-winning
               physician with over 10 years of hospital experience across United
               States. He has collaborated on campaigns for some of the
@@ -78,7 +80,7 @@ export default function Team() {
                 <img src="/5.png" alt="" style={{ maxWidth: "200px" }} />
               </a>
               {/* <h3 className="name">Name</h3> */}
-              <p className="team-description">Healthcare Professional</p>
+              {/* <p className="team-description">Healthcare Professional</p>
               <a
                 href="https://twitter.com/minasnft"
                 className="twitter-link w-inline-block"
@@ -88,9 +90,9 @@ export default function Team() {
                   loading="lazy"
                   alt="Twitter"
                 />
-              </a>
+              </a> */}
             </div>
-            <p>
+            <p className="text_grad">
               Ms Beauty is an entrepreneur, blockchain fanatic and Wharton grad.
               A 6-month immersion into research within the NFT space revealed
               the time was ripe for SpaVerse to be established.

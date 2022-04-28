@@ -1,9 +1,7 @@
-import Link from "next/link";
 import React from "react";
 import Countdown from "react-countdown";
-import Opensea from "./icons/Opensea";
-import Rare from "./icons/Rare";
-import Twitter from "./icons/Twitter";
+
+import Header from "./Header";
 // import { Link } from "react-router-dom";
 
 const endCount = `2022-03-05T00:00:00`;
@@ -33,118 +31,23 @@ export default function Home() {
   return (
     <>
       <div id="home" className="hero-section">
-        {/* <div className="absolute-clouds">
-          <img
-            src="/imgs/rightCloud.svg"
-            loading="lazy"
-            style={{
-              color: "red",
-              transform:
-                "translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(180deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              willChange: "transform",
-            }}
-            data-w-id="4b10e664-d74c-bbd5-51f8-24921901f93f"
-            alt=""
-            className="right-cloud"
-          />
-          <img
-            src="/imgs/leftCloud.svg"
-            loading="lazy"
-            style={{
-              transform:
-                "translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-              transformStyle: "preserve-3d",
-              willChange: "transform",
-            }}
-            data-w-id="ec55ca2d-d790-5b75-1a1f-3a44acd6c689"
-            alt=""
-            className="left-cloud"
-          />
-        </div> */}
-        <div
-          data-animation="default"
-          data-collapse="medium"
-          data-duration="400"
-          data-easing="ease"
-          data-easing2="ease"
-          role="banner"
-          className="navbar w-nav header_cl"
+        <Header />
+        <video
+          autoPlay
+          muted
+          loop
+          id="myVideo"
+          style={{ width: "101%", top: "-10%" }}
         >
-          <a href="#home" className="nav-logo w-nav-brand w--current">
-            <img
-              loading="lazy"
-              src="/3.png"
-              // src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c0123a803c0cd9ae38b6_WP%20LOGO.svg"
-              alt="WonderMfers"
-              // style={{ maxWidth: "130%" }}
-            />
-          </a>
-          <nav role="navigation" className="nav-menu w-nav-menu">
-            {/* <a href="#about" className="nav-link w-nav-link">
-              About
-            </a> */}
-            <a href="#home" className="nav-link w-nav-link nav_lk_cl">
-              Home
-            </a>
-            {/* <a href="#wondermap" className="nav-link w-nav-link nav_lk_cl">
-              Wondermap
-            </a> */}
-            <a href="#faq" className="nav-link w-nav-link nav_lk_cl">
-              FAQ
-            </a>
-            <a href="#roadmap" className="nav-link w-nav-link nav_lk_cl">
-              Roadmap
-            </a>
-            <a href="#team" className="nav-link w-nav-link nav_lk_cl">
-              Team
-            </a>
-            <div className="right-nav">
-              <a
-                href="https://opensea.io/collection/wondermfer"
-                className="social-link w-inline-block"
-              >
-                <Opensea color={"#ede6db"} />
-              </a>
-              <a
-                href="https://looksrare.org/collections/0x25937e8177c6A8C08266a4E17b2Ad09eD2DEb635"
-                className="social-link w-inline-block"
-              >
-                <Rare color={"#ede6db"} />
-              </a>
-              <a
-                href="https://twitter.com/MferWonder"
-                className="social-link w-inline-block"
-              >
-                <Twitter color={"#ede6db"} />
-              </a>
-              <a href="#" className="connect-button w-button">
-                Connect
-              </a>
-            </div>
-          </nav>
-          <div
-            className="menu-button w-nav-button"
-            style={{ WebkitUserSelect: "text" }}
-            aria-label="menu"
-            role="button"
-            tabIndex="0"
-            aria-controls="w-nav-overlay-0"
-            aria-haspopup="menu"
-            aria-expanded="false"
-          >
-            <div className="icon w-icon-nav-menu"></div>
-          </div>
-          <div
-            className="w-nav-overlay"
-            data-wf-ignore=""
-            id="w-nav-overlay-0"
-          ></div>
-        </div>
+          <source src="/animation.mp4" type="video/mp4" />
+        </video>
         <div
           className="container centered-text w-container"
           style={{
-            paddingTop: "0",
+            padding: "35% 0 7% 0",
+            // paddingTop: "5%",
+            // paddingBottom: "15%",
+            // backgroundImage: "",
           }}
         >
           {/* <img
@@ -162,9 +65,13 @@ export default function Home() {
             alt="WonderPal logo"
           /> */}
           {/* <h1 className="heading nav_lk_cl">Beauty Brain MetaSpa</h1> */}
-          <img src="/banner2.png" alt="" style={{ width: "80%" }} />
-          <img src="/1.png" alt="" style={{ maxWidth: "25%" }} />
-          <Link
+          {/* <img src="/banner2.png" alt="" style={{ width: "130%" }} /> */}
+          {/* <img src="/1.png" alt="" style={{ maxWidth: "25%" }} /> */}
+          <h3 className="text_grad" style={{ fontSize: "28px" }}>
+            A 3D virtual world focus on optimizing every human’s spa experience
+          </h3>
+          {/* <img src="/spa_card.jpg" alt="" /> */}
+          {/* <Link
             // disabled={mintStatus}
             data-w-id="57408da1-b59b-fad3-0308-861394b4b6b8"
             href="/mint"
@@ -173,6 +80,9 @@ export default function Home() {
               // className="button w-button animate__animated animate__zoomIn"
               className="button w-button zoomInPop animation_delay_1"
               style={{
+                border: "none",
+                background:
+                  "linear-gradient(to right, #c1702c, #f6de7d, #c1702c)",
                 // width: "0",
                 // disabled: mintStatus,
                 // transform:
@@ -180,11 +90,12 @@ export default function Home() {
                 // transformStyle: "preserve-3d",
                 pointerEvents: mintStatus ? "all" : "none",
                 opacity: mintStatus ? "1" : "0.5",
+                marginTop: "10%",
               }}
             >
               MINT!
             </a>
-          </Link>
+          </Link> */}
           <div className="timer">
             {/* <Countdown date={Date.now() + 10000} /> */}
             <Countdown

@@ -10,8 +10,8 @@ export default function Footer() {
       <div
         className="dark-blue-footer wf-section"
         style={{
-          backgroundColor: "var(--palette-dark-1)",
-          color: "var(--palette-dark-2)",
+          backgroundColor: "var(--palette-dark-3)",
+          color: "var(--palette-light-1)",
         }}
       >
         <div className="footer-container w-container">
@@ -74,19 +74,19 @@ export default function Footer() {
               href="https://opensea.io/collection/wondermfer"
               className="footer-logo-link w-inline-block"
             >
-              <Opensea color={"#1d5c63"} />
+              <Opensea color={"#ede6db"} />
             </a>
             <a
               href="https://looksrare.org/collections/0x25937e8177c6A8C08266a4E17b2Ad09eD2DEb635"
               className="footer-logo-link looksrare w-inline-block"
             >
-              <Rare color={"#1d5c63"} />
+              <Rare color={"#ede6db"} />
             </a>
             <a
               href="https://twitter.com/MferWonder"
               className="footer-logo-link w-inline-block"
             >
-              <Twitter color={"#1d5c63"} />
+              <Twitter color={"#ede6db"} />
             </a>
           </div>
           {/* <div>
