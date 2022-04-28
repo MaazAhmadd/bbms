@@ -50,9 +50,10 @@ export default function Footer() {
             <input
               style={{
                 padding: "12px 20px 12px 20px",
-                border: "3px solid #000",
+                border: "0",
                 borderRadius: "50px",
-                backgroundColor: "#f9da8d",
+                background:
+                  "linear-gradient(to right, #c1702c, #f6de7d, #c1702c)",
                 transition: "background-color 200ms ease-out",
                 color: "#000",
                 fontSize: "20px",

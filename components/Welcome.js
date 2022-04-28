@@ -5,7 +5,9 @@ export default function Welcome() {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 600);
+      if (window.scrollY > 600) {
+        setScroll(true);
+      }
     });
   }, []);
   return (

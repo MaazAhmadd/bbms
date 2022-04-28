@@ -16,7 +16,7 @@ export default function Team() {
           className="emoji-on-top flower"
         /> */}
         <h2 className="centered-heading text_grad" style={{ width: "35%" }}>
-          Our Team
+          Team
         </h2>
         <p className="text_grad" style={{ width: "110%" }}>
           SpaVerse is supported by medical professionals to build and educate

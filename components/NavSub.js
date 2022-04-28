@@ -5,7 +5,20 @@ import Twitter from "./icons/Twitter";
 
 export default function NavSub() {
   return (
-    <nav role="navigation" className="nav-menu w-nav-menu">
+    <nav
+      role="navigation"
+      className="nav-menu w-nav-menu animate__fadeIn animate__animated"
+      style={{
+        top: "55px",
+        display: "flex",
+        flexDirection: "column",
+        width: "400px",
+        background: "#0000008c",
+        right: "240px",
+        padding: "5%",
+        position: "absolute",
+      }}
+    >
       {/* <a href="#about" className="nav-link w-nav-link">
               About
             </a> */}
@@ -15,16 +28,16 @@ export default function NavSub() {
       {/* <a href="#wondermap" className="nav-link w-nav-link nav_lk_cl">
               Wondermap
             </a> */}
+      <a href="#roadmap" className="nav-link w-nav-link nav_lk_cl">
+        Welcome
+      </a>
       <a href="#faq" className="nav-link w-nav-link nav_lk_cl">
         FAQ
-      </a>
-      <a href="#roadmap" className="nav-link w-nav-link nav_lk_cl">
-        Roadmap
       </a>
       <a href="#team" className="nav-link w-nav-link nav_lk_cl">
         Team
       </a>
-      <div className="right-nav">
+      <div className="right-nav" style={{ position: "static" }}>
         <a
           href="https://opensea.io/collection/wondermfer"
           className="social-link w-inline-block"

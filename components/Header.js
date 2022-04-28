@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Opensea from "./icons/Opensea";
 import Rare from "./icons/Rare";
 import Twitter from "./icons/Twitter";
+import NavSub from "./NavSub";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div
       data-animation="default"
@@ -46,8 +48,19 @@ export default function Header() {
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
           }}
+          onClick={() => setIsOpen(!isOpen)}
         ></div>
       </div>
+      {isOpen ? (
+        <div
+          onClick={() => setIsOpen(!isOpen)}
+          style={{ width: "110vw", height: "110vh", position: "absolute" }}
+        >
+          <NavSub />
+        </div>
+      ) : (
+        ""
+      )}
       <div
         className="w-nav-overlay"
         data-wf-ignore=""

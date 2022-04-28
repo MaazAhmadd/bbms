@@ -33,11 +33,11 @@ export default function FAQ() {
                 info={
                   <div className="faq-content w-richtext">
                     <p className="text_grad ">
-                      We believe in putting ideas into blockchain technology, a
-                      new wave of NFT initiatives and collections will emerge.
-                      We have analyzed multiple projects and roadmaps; our
-                      strong foundation and long-term vision sets us apart from
-                      other projects.
+                      We believe that a new wave of NFT initiatives and
+                      collections will emerge on blockchain technology. We have
+                      analyzed multiple projects and roadmaps; our strong
+                      foundation and long-term vision set us apart from other
+                      projects.
                     </p>
                   </div>
                 }

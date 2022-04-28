@@ -4,7 +4,9 @@ export default function Card() {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 800);
+      if (window.scrollY > 800) {
+        setScroll(true);
+      }
     });
   }, []);
   return (
@@ -39,7 +41,9 @@ export default function Card() {
           className="text_grad"
         >
           <h3 style={{ fontSize: "24px" }}>ORIGINAL COLLECTION</h3>
-          <h2 style={{ fontSize: "45px",fontFamily:"sans-serifs" }}>Brain Beauty</h2>
+          <h2 style={{ fontSize: "45px", fontFamily: "sans-serifs" }}>
+            Brain Beauty
+          </h2>
           <p>
             There will be several surprises for those who will successfully
             mint. One must hold the SpaVerse pass to get Beauty Brain initial
