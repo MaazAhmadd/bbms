@@ -1,4 +1,7 @@
 import React from "react";
+import Opensea from "./icons/Opensea";
+import Rare from "./icons/Rare";
+import Twitter from "./icons/Twitter";
 
 export default function NavSub() {
   return (
