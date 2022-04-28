@@ -79,7 +79,7 @@ export default function Team() {
               <p className="text_grad">
                 Brain is an early investor in crypto and award-winning physician
                 with over 22 years of experience across the United States. He
-                has collaborated on campaigns for some of the world's most
+                has collaborated on campaigns for some of the world&apos;s most
                 recognized healthcare facilities.
               </p>
               {/* <h3 className="name">Name</h3> */}
