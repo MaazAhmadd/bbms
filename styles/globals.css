@@ -5171,14 +5171,21 @@ h6 {
   border: none;
 }
 /* border gradient */
-.border-gradient {
+/* .border-gradient {
   border: 1px solid;
   border-image-slice: 1;
   border-width: 3px;
+} */
+.border-gradient {
+  /* background: linear-gradient(to right, #c1702c, #f6de7d, #c1702c) 1; */
+  /* border: 2px solid transparent; */
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #c1702c, #f6de7d, #c1702c) 1;
 }
-.border-gradient-gold {
+/* .border-gradient-gold {
   border-image-source: linear-gradient(to right, #c1702c, #f6de7d, #c1702c);
-}
+} */
 video {
   position: absolute;
   top: 0;
