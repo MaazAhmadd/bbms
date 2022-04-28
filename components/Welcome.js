@@ -20,10 +20,10 @@ export default function Welcome() {
       }}
     >
       <div className="container _120 w-container nav_lk_cl">
-        <h3 className="text_grad">
+        <h3 className="text_grad" style={{ width: "110%" }}>
           Join us on this luxurious journey to witness a new NFT project.
           SpaVerse is a collection of 2500 living on the Ethereum blockchain in
-          the form of an &nbsp;&nbsp;&nbsp;&nbsp; ERC-721 token.
+          the form of an ERC-721 token.
         </h3>
       </div>
       <img

@@ -18,9 +18,9 @@ export default function Team() {
         <h2 className="centered-heading text_grad" style={{ width: "35%" }}>
           Our Team
         </h2>
-        <p className="text_grad">
-          SpaVerse is supported by professionals to build and educate the
-          community on health and beauty treatment.
+        <p className="text_grad" style={{ width: "110%" }}>
+          SpaVerse is supported by medical professionals to build and educate
+          the community on health, beauty and wellness.
         </p>
         <div
           className="team-flex"
@@ -35,11 +35,11 @@ export default function Team() {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                padding: "0 9%",
+                padding: "0 18%",
                 alignItems: "center",
               }}
             >
-              <a href="https://twitter.com/minasnft" className="w-inline-block">
+              <a href="#" className="w-inline-block">
                 <img src="/2.png" alt="" style={{ maxWidth: "200px" }} />
               </a>
               {/* <h3 className="name">Name</h3> */}
@@ -55,13 +55,13 @@ export default function Team() {
                 />
               </a> */}
             </div>
-            <p className="text_grad">
-              Mr. Brain is an early investor in crypto and award-winning
-              physician with over 10 years of hospital experience across United
-              States. He has collaborated on campaigns for some of the
-              world&apos;s most recognized hospitals, delivering a
-              multidisciplinary blend of consistently successful cases.
-            </p>
+            <a
+              href="#"
+              className="w-inline-block"
+              style={{ marginRight: "8%" }}
+            >
+              <img src="/5.png" alt="" style={{ maxWidth: "200px" }} />
+            </a>
           </div>
           <div
             className="team-member-card"
@@ -76,9 +76,12 @@ export default function Team() {
                 alignItems: "center",
               }}
             >
-              <a href="https://twitter.com/minasnft" className="w-inline-block">
-                <img src="/5.png" alt="" style={{ maxWidth: "200px" }} />
-              </a>
+              <p className="text_grad">
+                Brain is an early investor in crypto and award-winning physician
+                with over 22 years of experience across the United States. He
+                has collaborated on campaigns for some of the world's most
+                recognized healthcare facilities.
+              </p>
               {/* <h3 className="name">Name</h3> */}
               {/* <p className="team-description">Healthcare Professional</p>
               <a
@@ -93,9 +96,10 @@ export default function Team() {
               </a> */}
             </div>
             <p className="text_grad">
-              Ms Beauty is an entrepreneur, blockchain fanatic and Wharton grad.
-              A 6-month immersion into research within the NFT space revealed
-              the time was ripe for SpaVerse to be established.
+              Beauty is a medical spa entrepreneur, blockchain fanatic and
+              Wharton fintech grad. A 6-month immersion into research within the
+              NFT space revealed the time is right for SpaVerse to be
+              established.
             </p>
           </div>
           {/* <div className="team-member-card" style={{ width: "auto" }}>
