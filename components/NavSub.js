@@ -2,22 +2,38 @@ import React from "react";
 import Opensea from "./icons/Opensea";
 import Rare from "./icons/Rare";
 import Twitter from "./icons/Twitter";
+import useWindowDimensions from "./useDimensions";
 
 export default function NavSub() {
+  const { width, height } = useWindowDimensions();
+
   return (
     <nav
       role="navigation"
       className="nav-menu w-nav-menu animate__fadeIn animate__animated"
-      style={{
-        top: "55px",
-        display: "flex",
-        flexDirection: "column",
-        width: "400px",
-        background: "rgb(0 0 0 / 95%)",
-        right: "240px",
-        padding: "4% 5%",
-        position: "absolute",
-      }}
+      style={
+        width < 640
+          ? {
+              top: "80px",
+              display: "flex",
+              flexDirection: "column",
+              width: "300px",
+              background: "rgb(0 0 0 / 95%)",
+              right: "60px",
+              padding: "4% 5%",
+              position: "absolute",
+            }
+          : {
+              top: "55px",
+              display: "flex",
+              flexDirection: "column",
+              width: "400px",
+              background: "rgb(0 0 0 / 95%)",
+              right: "240px",
+              padding: "4% 5%",
+              position: "absolute",
+            }
+      }
     >
       {/* <a href="#about" className="nav-link w-nav-link">
               About
@@ -36,6 +52,12 @@ export default function NavSub() {
       </a>
       <a href="#team" className="nav-link w-nav-link nav_lk_cl text_grad">
         Team
+      </a>
+      <a href="#team" className="nav-link w-nav-link nav_lk_cl text_grad">
+        Outlet
+      </a>
+      <a href="#team" className="nav-link w-nav-link nav_lk_cl text_grad">
+        NewsLetter
       </a>
       {/* <div className="right-nav" style={{ position: "static" }}>
         <a

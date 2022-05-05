@@ -3,8 +3,10 @@ import React from "react";
 import Opensea from "./icons/Opensea";
 import Rare from "./icons/Rare";
 import Twitter from "./icons/Twitter";
+import useWindowDimensions from "./useDimensions";
 
 export default function Footer() {
+  const { width, height } = useWindowDimensions();
   return (
     <>
       <div
@@ -18,7 +20,13 @@ export default function Footer() {
           <h3 style={{ marginBottom: "3%" }} className="text_grad">
             Stay Connected
           </h3>
-          {/* <br /> */}
+          <br />
+          <p className="text_grad" tyle={{ marginBottom: "3%" }}>
+            If you're interested in collaborating with SpaVerse, please email us
+            at info@spaverse.net
+          </p>
+
+          <br />
           <div
             id="subscribe"
             style={{
@@ -28,6 +36,8 @@ export default function Footer() {
               justifyContent: "space-evenly",
               textAlign: "center",
               margin: "auto",
+              flexDirection: width < 640 ? "column" : "row",
+              gap: width < 640 ? "10px" : "",
             }}
           >
             <label

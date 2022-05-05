@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import useWindowDimensions from "./useDimensions";
 
 export default function Card() {
+  const { width, height } = useWindowDimensions();
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -19,43 +21,48 @@ export default function Card() {
           color: "white",
           display: "flex",
           padding: "6% 15%",
-          flexDirection: "row",
+          flexDirection: width < 640 ? "column" : "row",
           alignItems: "center",
         }}
       >
-        <div style={{ margin: "0 15% 0 0%" }}>
+        {/* <div style={{ margin: width < 640 ? "0 0% 10% 0%" : "0 15% 0 0%" }}>
           <img
             src="/BB_card.jpg"
             alt=""
             className={scroll ? "animate__animated animate__slideInLeft" : ""}
           />
-        </div>
+        </div> */}
         <div
           style={{
             display: "flex",
-            width: "125%",
+            width: width < 640 ? "100%" : "125%",
             gap: "15px",
             flexDirection: "column",
             alignItems: "flex-start",
           }}
           className="text_grad"
         >
-          <h3 style={{ fontSize: "24px" }}>ORIGINAL COLLECTION</h3>
+          {/* <h3 style={{ fontSize: "24px" }}>ORIGINAL COLLECTION</h3> */}
           <h2 style={{ fontSize: "45px", fontFamily: "sans-serifs" }}>
-            Brain Beauty
+            First Edition: Brain Beauty
           </h2>
           <p>
             There will be several surprises for those who will successfully
-            mint. One must hold the SpaVerse pass to get Beauty Brain initial
-            collection. Membership includes:
+            mint. One must hold the SpaVerse Beauty Brain first edition.
+            Membership includes:
             <br />
-            - Collaboration with beauty brands. Names will be revealed after the
-            mint
+            - Collaboration with beauty brands in the web 3 space to offer perks
+            exclusively for the holders. Names of the beauty brands will be
+            revealed after the mint
             <br />
-            - Access to private health, beauty, and wellness webinars
+            - Access to first web 3 SpaVerse outlet for special pricing on
+            beauty products and spa packages
             <br />
-            - In-person glamorous events
-            <br />- Early excess to future SpaVerse projects
+            - Access to private health, beauty, and wellness webinars to learn
+            about new technology
+            <br />- Early excess to SpaVerse future projects. SpaVerse second
+            edition: Pamper Me. TBA
+            <br />- In-person glamorous event. TBA
           </p>
         </div>
       </div>

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import useWindowDimensions from "./useDimensions";
 
 export default function Welcome() {
   const [scroll, setScroll] = useState(false);
+  const { width, height } = useWindowDimensions();
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 600) {
@@ -21,17 +23,26 @@ export default function Welcome() {
         alignItems: "center",
       }}
     >
-      <div className="container _120 w-container nav_lk_cl">
-        <h3 className="text_grad" style={{ width: "110%" }}>
+      <div
+        className="container _120 w-container nav_lk_cl"
+        // style={{ padding: "8% 5%" }}
+        style={{ padding: width < 640 ? "8% 5%" : null }}
+      >
+        <h3
+          className="text_grad"
+          // style={{ width: "115%" }}
+          style={{ width: width < 640 ? "100%" : "115%" }}
+        >
           Join us on this luxurious journey to witness a new NFT project.
-          SpaVerse is a collection of 2500 living on the Ethereum blockchain in
-          the form of an ERC-721 token.
+          SpaVerse's First edition: Beauty Brain is a collection of 10,000 nft
+          on the Ethereum blockchain in the form of an ERC-721 token.
         </h3>
       </div>
       <img
-        src="/spa_card_1.jpg"
+        src="/png_copy.png"
         alt=""
-        style={{ width: "22%", margin: "0 0 5% 0" }}
+        style={{ width: width < 640 ? "65%" : "35%", margin: "0 0 5% 0" }}
+        // style={{ width: "22%", margin: "0 0 5% 0" }}
       />
       <Link
         // disabled={mintStatus}
@@ -48,14 +59,7 @@ export default function Welcome() {
           style={{
             border: "none",
             background: "linear-gradient(to right, #c1702c, #f6de7d, #c1702c)",
-            // width: "0",
-            // disabled: mintStatus,
-            // transform:
-            //   "translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)",
-            // transformStyle: "preserve-3d",
-            // pointerEvents: mintStatus ? "all" : "none",
-            // opacity: mintStatus ? "1" : "0.5",
-            // margin: "10% 0 0 45%",
+            // margin: "7% 0",
           }}
         >
           MINT!

@@ -2,6 +2,7 @@ import React from "react";
 import Countdown from "react-countdown";
 
 import Header from "./Header";
+import useWindowDimensions from "./useDimensions";
 // import { Link } from "react-router-dom";
 
 const endCount = `2022-03-05T00:00:00`;
@@ -13,6 +14,8 @@ const addZero = (i) => {
 };
 
 export default function Home() {
+  const { width, height } = useWindowDimensions();
+
   const [mintStatus, setMintStatus] = React.useState(false);
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
@@ -37,14 +40,18 @@ export default function Home() {
           muted
           // loop
           id="myVideo"
-          style={{ width: "101%", top: "-10%" }}
+          style={
+            width < 640
+              ? { width: "100%", position: "static", marginTop: "30px" }
+              : { width: "101%", top: "-10%" }
+          }
         >
           <source src="/animation.mp4" type="video/mp4" />
         </video>
         <div
           className="container centered-text w-container"
           style={{
-            padding: "35% 0 7% 0",
+            padding: width < 640 ? "2% 5%" : "35% 0 7% 0",
             // paddingTop: "5%",
             // paddingBottom: "15%",
             // backgroundImage: "",
@@ -67,7 +74,10 @@ export default function Home() {
           {/* <h1 className="heading nav_lk_cl">Beauty Brain MetaSpa</h1> */}
           {/* <img src="/banner2.png" alt="" style={{ width: "130%" }} /> */}
           {/* <img src="/1.png" alt="" style={{ maxWidth: "25%" }} /> */}
-          <h3 className="text_grad" style={{ fontSize: "28px" }}>
+          <h3
+            className="text_grad"
+            style={{ fontSize: width < 640 ? "25px" : "28px" }}
+          >
             A 3D virtual world focus on optimizing every human’s spa experience
           </h3>
           {/* <img src="/spa_card.jpg" alt="" /> */}
@@ -96,13 +106,13 @@ export default function Home() {
               MINT!
             </a>
           </Link> */}
-          <div className="timer">
-            {/* <Countdown date={Date.now() + 10000} /> */}
+          {/* <div className="timer">
+            <Countdown date={Date.now() + 10000} />
             <Countdown
               date={new Date(endCount).getTime()}
               renderer={renderer}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

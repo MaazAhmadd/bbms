@@ -1,7 +1,10 @@
 import React, { useRef, useState } from "react";
 import Question from "./Question";
+import useWindowDimensions from "./useDimensions";
 
 export default function FAQ() {
+  const { width, height } = useWindowDimensions();
+
   return (
     <>
       <div
@@ -9,7 +12,10 @@ export default function FAQ() {
         className="mint-green-section wf-section"
         style={{ backgroundColor: "var(--palette-dark-3)" }}
       >
-        <div className="container _750 w-container">
+        <div
+          className="container _750 w-container"
+          style={width < 640 ? { padding: "15% 4%" } : {}}
+        >
           {/* <img
             src="https://assets-global.website-files.com/61e9ad107f42425177667f64/61e9c0108012782683157ddc_flower.svg"
             loading="lazy"
@@ -18,7 +24,7 @@ export default function FAQ() {
           /> */}
           <h2
             className="centered-heading nav_lk_cl text_grad"
-            style={{ width: "15%", marginBottom: "5%" }}
+            style={{ width: "16%", marginBottom: "5%" }}
           >
             FAQ
           </h2>
@@ -27,17 +33,45 @@ export default function FAQ() {
               <Question
                 title={
                   <div className="faq-question text_grad m0">
-                    What distinguishes us?
+                    What is so special about this NFT collection?
                   </div>
                 }
                 info={
                   <div className="faq-content w-richtext">
                     <p className="text_grad ">
                       We believe that a new wave of NFT initiatives and
-                      collections will emerge on blockchain technology. We have
-                      analyzed multiple projects and roadmaps; our strong
-                      foundation and long-term vision set us apart from other
-                      projects.
+                      collections will emerge on blockchain technology. After
+                      understanding and analyzing all the successful projects,
+                      we believe our foundation and long-term vision set us
+                      apart from other projects. SpaVerse is the first
+                      groundbreaking medical spa project committed to optimizing
+                      every human’s spa experience through the virtual world.
+                    </p>
+                  </div>
+                }
+              />
+              <Question
+                title={
+                  <div className="faq-question text_grad m0">
+                    How do I purchase a SpaVerse NFT?
+                  </div>
+                }
+                info={
+                  <div className="faq-content w-richtext text_grad">
+                    <p>
+                      To purchase a SpaVerse NFT, conduct the following steps:{" "}
+                    </p>
+                    <p>
+                      1. You will need to buy ETH from a cryptocurrency exchange
+                      like Coinbase, or Binance.
+                    </p>
+                    <p>
+                      2. You will need to transfer your ETH into a digital
+                      wallet like MetaMask, or WalletConnect compatible wallets.
+                    </p>
+                    <p>
+                      3. These wallets connect to the SpaVerse website and allow
+                      you to purchase an NFT.
                     </p>
                   </div>
                 }
@@ -53,7 +87,8 @@ export default function FAQ() {
                     className="faq-content w-richtext text_grad"
                     style={{ fontSize: "18px" }}
                   >
-                    <h3>4</h3>
+                    <p>Presale: 4 per wallet</p>
+                    <p>Public sale: 8 per wallet</p>
                   </div>
                 }
               />
@@ -65,10 +100,23 @@ export default function FAQ() {
                 }
                 info={
                   <div className="faq-content w-richtext text_grad">
-                    0.05 ETH
+                    <p>Presale: 0.05</p>
+                    <p>Public Sale: 0.07</p>
                   </div>
                 }
               />
+              {/* <Question
+                title={
+                  <div className="faq-question text_grad m0">
+                    How do I find more information about this project?
+                  </div>
+                }
+                info={<div className="faq-content w-richtext text_grad">
+
+
+                </div>}
+              /> */}
+
               {/* <Question
                 title={
                   <div className="faq-question">

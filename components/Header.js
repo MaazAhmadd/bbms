@@ -3,8 +3,10 @@ import Opensea from "./icons/Opensea";
 import Rare from "./icons/Rare";
 import Twitter from "./icons/Twitter";
 import NavSub from "./NavSub";
+import useWindowDimensions from "./useDimensions";
 
 export default function Header() {
+  const { width, height } = useWindowDimensions();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
@@ -16,7 +18,11 @@ export default function Header() {
       role="banner"
       className="navbar w-nav header_cl"
     >
-      <a href="#home" className="nav-logo w-nav-brand w--current">
+      <a
+        href="#home"
+        className="nav-logo w-nav-brand w--current"
+        style={width < 640 ? { top: "10px" } : {}}
+      >
         <img
           loading="lazy"
           src="/3.png"

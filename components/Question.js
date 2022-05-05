@@ -15,7 +15,7 @@ export default function Question({ title, info }) {
           WebkitBackgroundClip: "text",
           borderRadius: "0",
         }}
-      >
+      > 
         <div className="faq-title-area">
           {title}
           <span
