@@ -34,8 +34,8 @@ export default function Welcome() {
           style={{ width: width < 640 ? "100%" : "115%" }}
         >
           Join us on this luxurious journey to witness a new NFT project.
-          SpaVerse's First edition: Beauty Brain is a collection of 10,000 nft
-          on the Ethereum blockchain in the form of an ERC-721 token.
+          SpaVerse&apos;s First edition: Beauty Brain is a collection of 10,000
+          nft on the Ethereum blockchain in the form of an ERC-721 token.
         </h3>
       </div>
       <img

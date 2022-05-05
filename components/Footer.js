@@ -22,8 +22,8 @@ export default function Footer() {
           </h3>
           <br />
           <p className="text_grad" tyle={{ marginBottom: "3%" }}>
-            If you're interested in collaborating with SpaVerse, please email us
-            at info@spaverse.net
+            If you&apos;re interested in collaborating with SpaVerse, please
+            email us at info@spaverse.net
           </p>
 
           <br />
