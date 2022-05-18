@@ -317,7 +317,7 @@ export default function Mint() {
               <img
                 loading="lazy"
                 className="nav-logo w-nav-brand w--current"
-                src="/imgs/logo.png"
+                src="/3.png"
                 alt="Wonder Pals"
               />
             </a>
@@ -400,19 +400,22 @@ export default function Mint() {
         </div>
         <div className="container centered-text w-container">
           <s.Container
+            className="border-gradient"
             flex={2}
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundColor: "var(--palette-dark-1)",
+              // backgroundColor: "var(--palette-dark-1)",
               padding: 24,
               color: "white",
+              borderWidth: "4px",
               borderRadius: 24,
-              border: "4px dashed var(--secondary)",
+              // border: "4px solid gold",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
             <s.TextTitle
+              className="text_grad"
               style={{
                 textAlign: "center",
                 fontSize: 50,
@@ -423,6 +426,7 @@ export default function Mint() {
               {data.totalSupply} / {CONFIG.MAX_SUPPLY}
             </s.TextTitle>
             <s.TextDescription
+              className="text_grad"
               style={{
                 textAlign: "center",
                 color: "var(--primary-text)",
@@ -436,11 +440,13 @@ export default function Mint() {
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
                 <s.TextTitle
+                  className="text_grad"
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   The sale has ended.
                 </s.TextTitle>
                 <s.TextDescription
+                  className="text_grad"
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   You can still find {CONFIG.NFT_NAME} on
@@ -453,11 +459,13 @@ export default function Mint() {
             ) : (
               <>
                 <s.TextTitle
+                  className="text_grad"
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   Every WMF is free to mint
                 </s.TextTitle>
                 <s.TextTitle
+                  className="text_grad"
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}
@@ -465,6 +473,7 @@ export default function Mint() {
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
+                  className="text_grad"
                   style={{ textAlign: "center", color: "var(--accent-text)" }}
                 >
                   Excluding gas fees.
@@ -474,6 +483,7 @@ export default function Mint() {
                 blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
                     <s.TextDescription
+                      className="text_grad"
                       style={{
                         textAlign: "center",
                         color: "var(--accent-text)",
@@ -495,6 +505,7 @@ export default function Mint() {
                       <>
                         <s.SpacerSmall />
                         <s.TextDescription
+                          className="text_grad"
                           style={{
                             textAlign: "center",
                             color: "var(--accent-text)",
@@ -508,6 +519,7 @@ export default function Mint() {
                 ) : (
                   <>
                     <s.TextDescription
+                      className="text_grad"
                       style={{
                         textAlign: "center",
                         color: "var(--accent-text)",
